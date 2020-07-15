@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<htmL>
+    <head>
+        <title>gallery</title>
+        <link rel = "stylesheet" href="{% static "style/gal.css" %}">
+        <link rel="stylesheet" href="{% static "style/punchcard.css" %}">
+
+    </head>
+    <body>
+        <div class="overlayp">
+            <span class="pre animate">
+                <a href="/"><img src="{% static "images/arrow-left-solid.svg" %}"></a>
+            </span>
+        <div class="wrap">
+            <span class="pre btn">
+                <img src="{% static "images/bars-solid.svg" %}">
+            </span>
+                <div class="nav">
+                    <a class="" href="/">HOME</a>
+                    <a class="" href="gallery">GALLERY</a>
+                    <a class="" href="#">PROJECTS</a>
+                    <a class="" style="background-color: white;color:black; min-width:280px;" href="ourteam.html">OUR TEAM</a>
+                    <a class="" href="about">ABOUT US</a>
+                </div>
+        </div>     
+            <div class="head">
+                <h1>OUR TEAM</h1>
+                <hr>
+            </div>
+            <section>
+                {% for member in members %}
+                <div class="cont">
+                    <div class="punch_column">
+                    
+                        <img src={{member.img.url}} class="siop">
+                        <div class="punch_line"></div>
+                    
+                        <div class="punch_content">
+                            <h3>{{member.name}}</h3>
+                            <p>{{member.desc}}</p>
+                        </div>
+                </div>
+                {% endfor %}
+
+               
+    
+       
+            </section>
+    
+        </div>
+    </body>
+
+</htmL>

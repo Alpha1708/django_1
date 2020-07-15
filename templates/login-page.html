@@ -1,0 +1,27 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        <title>login-page</title>
+        <link rel="stylesheet" href="{% static 'style/from.css' %}">
+        <link rel = "stylesheet" href="{% static 'style/gal.css' %}">
+    </head>
+    <body style="background-image:url({% static 'images/const1.jpeg' %})">
+        <div class="overlay-login">
+            <span class="pre animate">
+                <a href="/"><img src="{% static "images/arrow-left-solid.svg" %}"></a>
+            </span>
+            <div class="form">
+                <form action="" request="POST">
+                    <input type="text" name="user" placeholder="ENTER NAME" required>
+                    <input type="text" name="palce" placeholder="PLACE" required>
+                    <input type="tel" pattern=[0-9]{10} name="contact"placeholder="9898989898" required>
+                    <input type="email" name="email" placeholder="email">
+                    <input type="text" name="info" placeholder="info" required>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

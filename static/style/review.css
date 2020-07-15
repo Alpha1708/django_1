@@ -1,0 +1,29 @@
+.review textarea, input{
+    border:none;
+    background-color: rgba(128, 128, 128, 0.808);
+    border-radius: 5px;
+}
+
+.review input {
+    height: 20px;
+    width: 234px;
+}
+
+.button{
+    padding:10px;
+    background-color: rgba(44, 44, 150, 0.836);
+    border:none;
+    border-radius:5px;
+    min-height:28px;
+    min-width: 200px;
+    color: white;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.button:hover{
+    background-color: rgb(44, 44, 150);
+    border:2px solid rgb(44, 44, 150);
+}

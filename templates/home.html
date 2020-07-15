@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUILD</title>
+        <link rel="stylesheet" href="{% static "/style/home.css" %}"> 
+        <link rel="stylesheet" href="{% static "/style/popup.css" %}">
+        <link rel="stylesheet" href="{% static "/style/slider.css" %}">
+    </head>
+    <body onload="Myfunction()">  
+        <div class="img m1" style="background-image: url({% static '/images/const1.jpeg' %});">
+   
+                
+                <div class="social">
+                    <div class="media"><img src="{% static "images/facebook-f-brands.svg" %}" class="icon"><a></a></div>
+                    <div class="media"><img src="{% static "images/instagram-brands.svg" %}" class="icon"><a></a></div>
+                    <div class="media"><img src="{% static "images/twitter-brands.svg" %}" class="icon"><a></a></div>
+                    <div class="media"><img src="{% static "images/linkedin-in-brands.svg" %}" class="icon"><a></a></div>
+                </div>
+                
+                <div class="social-short">                    
+                    <div>
+                        <div class="media short"><img src="{% static "images/facebook-f-brands.svg" %}" class="icon"><a></a></div>
+                        <div class="media short"><img src="{% static "images/instagram-brands.svg" %}" class="icon"><a></a></div>
+                        <div class="media short"><img src="{% static "images/twitter-brands.svg" %}" class="icon"><a></a></div>
+                        <div class="media short"><img src="{% static "images/linkedin-in-brands.svg" %}" class="icon"><a></a></div>
+                    </div>
+                </div>
+            
+            
+            
+            
+            <div class="overlay">
+                <div class="wrapo">
+                    <span class="pre btn color">
+                       <img src="{% static "images/bars-solid.svg" %}">
+                    </span>
+                    <div class="nav">
+                        <a class="" style="background-color: white;color:black; min-width:280px;" href="home.html">HOME</a>
+                        <a class="" href="gallery">GALLERY</a>
+                        <a class="" href="#">PROJECTS</a>
+                        <a class="" href="ourteam">OUR TEAM</a>
+                        <a class="" href="about">ABOUT US</a>
+                    </div>
+
+                    <div id="navbar">
+                        <a href="">HOME</a>
+                        <a href="gallery">GALLERY</a>  
+                        <a href="#">PROJECTS</a>
+                        <a href="ourteam">OUR TEAM</a>
+                        <a href="about">ABOUT US</a>
+                    </div>
+                </div>
+            
+                <script src="{% static "js/navbar.js" %}">
+            </script>
+                <div class="owner">
+                    <h1>ANUJ TIKARYA CONSULTANT AND VALUER</h1>
+                    <div class="type">
+                    </div>
+                    <script src="{% static '/js/typed.js' %}"></script>
+                    <script>    
+                        function Myfunction(){
+                            var typed = new Typed(".type",{
+                                        strings: [
+                                        "",
+                                        "ENGINEER",
+                                        "ARCHITECT",
+                                        "CONSULTANT",
+                                        "SURVEYOR",
+                                        "VALUER",
+                                        "STRUCTURAL DESIGNER",
+                                        "EXTERIOR DESIGNER",
+                                        "DETAIL PROJECT REPORT",
+                                        "PLANNER",
+                                        "LANDSCAPING"
+                                        ],
+                            typespeed: 2000,
+                            backspeed: 2000,
+                           
+                           loop: true
+                            });
+                        }
+                    </script><br>
+                   
+                </div>
+ 
+                <button class="appointment">
+                    <a href="login-page" style="text-decoration: none; color:white;">CONSULT NOW</a>
+                </button>  
+            </div>
+        </div>
+        
+            
+        
+        
+        
+        
+        
+        <section class="section">
+           <h1>PLANNING, STRUCTURE DESIGNING, ELEVATION</h1>
+           <p>RESIDENTIAL AND COMMERCIAL PLAN, STRUCTURE DESIGN, ESTIMATE, ELEVATION, DETAIL PROJECT REPORT, BLUE PRINT Etc..</p>
+        </section>
+        
+        
+       
+       <div href="#" class="img m2" style="background-image: url({% static '/images/const2.jpeg' %}");" > 
+            <div class="overlay">
+                <h2 style="text-align: center;color: whitesmoke;">CONTACT US<hr style="width: 50%;"></h2>
+                <div class="center">
+                    <div class="block">
+                        <div class="contact phone">
+                            <h2>contact</h2>
+                            <a href="tel:934 0435330">CALL NOW </a>
+                            <ul class="list">   
+                                <li>070006 96954</li> 
+                                <li>094249 23080</li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="contact address">
+                            <h2>Address</h2>
+                            <a href="https://www.google.com/maps/place/Er.+ANUJ+TIKARYA/@24.9178336,79.5825306,17z/data=!3m1!4b1!4m5!3m4!1s0x398297df891c28d3:0xb57a3ddca3e1dab4!8m2!3d24.9178336!4d79.5847193">GET DIRECTIONS</a>
+                            <address class="location">
+                                W-32/5, Indian Overseas Bank ke Aage,<br>
+                                Gayatri Mandir Road<br>
+                                Jawahar Road<br>
+                                Narayanpura<br>
+                                Chhatarpur, Madhya Pradesh 471001<br>
+                                India
+                            </address>
+                        </div>
+                    </div>    
+
+                    <div class="block">
+                        <div class="contact hours">
+                            <h2>Business Hours</h2>
+                            <ul class="list" style="line-height: 40px;">
+                                <li>Mon:	9:00 AM – 8:00 PM</li>
+                                <li>Tue:	9:00 AM – 8:00 PM</li>
+                                <li>Wed:	9:00 AM – 8:00 PM</li>
+                                <li>Thu:	9:00 AM – 8:00 PM</li>
+                                <li>Fri:	9:00 AM – 8:00 PM</li>
+                                <li>Sat:	9:00 AM – 8:00 PM</li>
+                                <li>Sun:	Closed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        <section class="section" style="background-color:rgba(0, 0, 0, 0.199);height:450px;">
+            <h2 style="text-align: center;color:black">Gallery<hr style="width: 50%;border-color: blue;"></h2>
+            <a href="gallery" class="viewall">view all</a><br>
+            <div class="slider">
+                <div class="innerSlider">
+                    <img src="{% static "images/gal1.jpg" %}" id="mainPhoto">
+                    <div class="grid">
+                        <img src="{% static "images/gal2.jpg" %}" class="galPhoto" onclick="myfunction(1)">
+                        <img src="{%static "images/gal4.jpg" %}" class="galPhoto" onclick="myfunction(2)">
+                        <img src="{%static "images/gal5.jpg" %}" class="galPhoto" onclick="myfunction(3)">
+                    </div>
+                </div>
+                <script src="{% static "/js/slider.js" %}"></script>
+        </section>
+       
+        <div class="img m3" style="background-image: url({% static '/images/const3.jpeg' %}");">
+            <div class="overlay">
+                <div class="pos">
+                    <div>
+                        <h2>FEEDBACK</h2>
+                        <hr>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <div class="review">
+                                <input type="text" size = "20" name = "name" placeholder="name" required><br><br>
+                                <input type="email" name="email" placeholder="email@gmail.com"><br><br>
+                                <input type="tel" id="phone" name="contact" placeholder="123-45-678" pattern="[0-9]{10}" required><br><br>
+                                <textarea name="review" id="review" cols="30" rows="10" placeholder="Message.."></textarea><br><br>
+                                <button type="submit" name="submit" class="button">submit</button>
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="outer">
+                        {% if messages %}
+                            {% for message in messages %}
+                                <h2>{{message}}</h2>
+                            {% endfor %}
+                        {% elif home.no_cmnt %}
+                            <h1 style="color:white;">{{home.no_cmnt}}</h1>
+                        {% else %}
+                            {% for cmnt in home.cmnts %}
+                            <div class="display">
+                                <h2>{{cmnt.name}}</h2>
+                                <hr>
+                                <p class="wrap">{{cmnt.review}}</p>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                
+                </div>
+                
+            </div>
+
+
+        </div>
+       
+       
+       
+       
+       
+       
+        <section class="section" style="height: auto;">
+            <div class="bio">  
+                <img src="{% static "images/profile.jpeg" %}" class="profile"><br>
+                <P>Anuj Tikarya</P><p>Founder</p>
+            </div>
+        </section>
+
+        
+    </div> 
+</div>
+    </body>
+</html>

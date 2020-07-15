@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>gallery</title>
+        <link rel = "stylesheet" href="{% static "style/gal.css" %}">
+
+    </head>
+    <body>
+        <div class="overlay">
+            <span class="pre animate">
+                <a href="/"><img src="{% static "images/arrow-left-solid.svg" %}"></a>
+            </span>
+        
+        
+        <div class="wrap">
+            <span class="pre btn" >
+               <img src="{% static "images/bars-solid.svg" %}">
+            </span>
+                <div class="nav">
+                    <a class="" href="/">HOME</a>
+                    <a class="" href="gallery">GALLERY</a>
+                    <a class="" href="">PROJECTS</a>
+                    <a class="" href="ourteam">OUR TEAM</a>
+                    <a class="" style="background-color: white;color:black; min-width:280px;" href="#">ABOUT US</a>
+                </div>
+        </div>     
+            <div class="head">
+                <h1>ABOUT US</h1>
+                <hr>
+            </div>
+            
+            <section class="section">
+                <div id="logo">
+                    <img src="{%static "images/map.jpeg" %}">
+                </div>
+                <p class="cont">
+                    Dear Mr Kishore,
+
+                    I purchased a Suzuki Desire from XYZ Suzuki showroom, located at Howrah. 
+                    I have been using it for two months and recently found a problem with the AC and braking system. I took it back to the showroom where the service was unfortunately not available. I tried to locate service centres and to my surprise, there were very few service centres located in the city. Looking at the records there are many complaints regarding this issue and many pending problems. This is a great disadvantage to the customers part which is resulting in the increase in maintenance cost, time and creating delivery issues.
+                    
+                    I would like to request and suggest you look into this matter and if possible open up more service centres which will help in customer satisfaction and in return will increase the sales and profit on company’s part.
+                    
+                    Thanks and Regards,
+                    Anil.
+                </p>
+            </section>
+        
+        </div>
+    </body>
+
+</html>     

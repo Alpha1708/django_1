@@ -1,0 +1,26 @@
+#mainPhoto{
+    max-height:200px;
+    width:604px;
+}
+
+.galPhoto {
+    height:150px;
+    cursor: pointer;
+    min-width: 290px;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+.innerSlider {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+}

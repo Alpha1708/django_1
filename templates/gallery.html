@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<htmL>
+    <head>
+        <title>gallery</title>
+        <link rel = "stylesheet" href="{% static "style/gal.css" %}">
+
+    </head>
+    <body>
+        <div class="overlay">
+            <span class="pre animate">
+               <a href="/"><img src="{% static "images/arrow-left-solid.svg" %}"></a> 
+            </span>
+        <div class="wrap">
+            <span class="pre btn">
+                <img src="{% static "images/bars-solid.svg" %}">
+            </span>
+                <div class="nav">
+                    <a class="" href="/">HOME</a>
+                    <a class="" style="background-color: white;color:black; min-width:280px;" href="#">GALLERY</a>
+                    <a class="" href="">PROJECTS</a>
+                    <a class="" href="ourteam">OUR TEAM</a>
+                    <a class="" href="about">ABOUT US</a>
+                </div>
+        </div>     
+            <div class="head">
+                <h1>GALLERY</h1>
+                <hr>
+            </div>
+            <section>
+                <div class="row">
+                    {% for gals in gal %}
+                    <div class="column bg si">
+                            <div class="content">
+                                <img src="{{gals.img.url}}">
+                                <h2>{{gals.name}}</h2>
+                                <p>{{gals.desc}}</p>
+                            </div>
+                    </div>
+                    {% endfor %}
+                    <div class="column bg si">
+                        <div class="content">
+                            <img src="{% static "images/gal2.jpg" %}">
+                            <h2>desc</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+    </body>
+
+</htmL>

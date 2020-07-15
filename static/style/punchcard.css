@@ -1,0 +1,69 @@
+body,html{
+    margin:0px;
+    padding:0px;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+
+    .punch_column {
+        max-height:180px;
+        max-width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: rgba(0, 0, 0, 0.795);
+        display: inline-flex;
+        margin: 10px;
+    }
+
+    .siop {
+        max-height:150px;
+        max-width:180px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .punch_line {
+        min-height: 150px;
+        position: relative;
+        width: 2px;
+        margin-right: 4px;
+        background-color: red;
+    }
+
+    .punch_content {
+        top:5%;
+        position: relative;
+        max-height:150px;
+        max-width:270px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: gray;
+    }
+
+    .punch_content P{
+        white-space: pre-line;
+    }
+
+    .cont {
+        display: inline;
+        margin:10px;
+    }
+    
+    section {
+        top:18%;
+        left:25%;
+        position: absolute;
+        }
+
+@media screen and (max-width: 800px) {
+    .cont{
+        display: inline;
+    }
+
+    section{
+        left: 2%;
+    }
+}
+
